@@ -1,0 +1,88 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <!-- ZigZag Template http://www.templatemo.com/tm-471-zigzag -->
+    <!-- Title Tag -->
+    <title>ZigZag HTML5 Template</title>
+
+    <!-- <<Mobile Viewport Code>> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- <<Attched Stylesheets>> -->
+    <link rel="stylesheet" href="{% static 'templatemo_471_zigzag/css/theme.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'templatemo_471_zigzag/css/media.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'templatemo_471_zigzag/css/font-awesome.min.css' %}" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800,600italic' rel='stylesheet' type='text/css'>
+
+    <!-- <<Attched Javascripts>> -->
+    <script type="text/javascript" src="{% static 'templatemo_471_zigzag/js/jquery-1.11.0.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'templatemo_471_zigzag/js/core.js' %}"></script>
+    <script type="text/javascript" src="{% static 'templatemo_471_zigzag/js/modernizr.js' %}"></script>
+
+</head>
+
+<body>
+
+    <!-- \\ Begin Holder \\ -->
+    <div class="DesignHolder">
+
+        <!-- \\ Begin Frame \\ -->
+        <div class="LayoutFrame">
+
+            <!-- \\ Begin Header \\ -->
+            <header class="header">
+                <div class="Center">
+
+                    {% include 'includes/topbar.html' %}
+
+
+                    {% include 'includes/products.html' %}
+
+                    <a href="#About">
+                        <figure><img src="{% static 'templatemo_471_zigzag/img/arrow-img.png' %}" alt="Arrow" class="arrow"></figure>
+                    </a>
+
+                </div>
+            </header>
+            <!-- // End Header // -->
+
+            <!-- \\ Begin Container \\ -->
+            <div id="Container">
+
+                <!-- \\ Begin Middle Section \\ -->
+                <div class="Middle_sec" id="About">
+                    <div class="Center">
+
+                        <div id="Leftside">
+                        {% include 'includes/clients.html' %}
+                        </div>
+
+                        <div id="Rightside">
+                        {% include 'includes/information.html' %}
+                        </div>
+
+                    </div>
+                </div>
+                <!-- // End Middle Section // -->
+
+
+                {% include 'includes/contact.html' %}
+
+
+            </div>
+            <!-- // End Container // -->
+
+            {% include 'includes/footer.html' %}
+
+        </div>
+        <!-- // End Layout Frame // -->
+
+    </div>
+    <!-- // End Design Holder // -->
+
+</body>
+
+</html>
